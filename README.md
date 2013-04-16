@@ -12,6 +12,14 @@
 
     $ component install nathan7/lazify
 
+## Example
+
+```js
+var req = lazify(function() {
+  return xhr('http://blah.com')
+})
+```
+
 ## API
 
 ### lazify :: (-> Promise a) -> LazyPromise a
